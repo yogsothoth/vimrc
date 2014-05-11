@@ -6,8 +6,9 @@
 """ general look and feel
 "   256 colours
 "   colorscheme
+"   trying out with no syntax colouring
 
-set t_Co=256
+"set t_Co=256
 "colorscheme inkpot
 
 """ useful defaults
@@ -65,6 +66,11 @@ set wildignore=*.swp,*.pyc
 set visualbell
 set noerrorbells
 
+autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
+autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
+highlight EOLWS ctermbg=red guibg=red
+
+" trying with no syntax colouring
 syntax on
 filetype plugin indent on
 
@@ -75,6 +81,12 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" commands and mapping
+let mapleader=","
+nnoremap <leader>m :silent make\|redraw!\|cw<CR>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>b :TagbarToggle<CR>
 
 " rainbow_parentheses settings
 " always on
