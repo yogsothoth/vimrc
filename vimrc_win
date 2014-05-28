@@ -1,0 +1,21 @@
+" _vimrc file for windows
+
+set rtp+=C:\vim\vimfiles\bundle\Vundle.vim
+let path="c:\\vim\\vimfiles\\bundle"
+call vundle#rc(path)
+
+source _vimrc_common
+
+" windows-specific
+colorscheme koehler
+set gfn=ProggySquareTT:h12:cANSI
+set lines=65 columns=85
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
+
+" colour on the 80th column
+set colorcolumn=80
