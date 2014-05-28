@@ -4,7 +4,7 @@ set rtp+=C:\vim\vimfiles\bundle\Vundle.vim
 let path="c:\\vim\\vimfiles\\bundle"
 call vundle#rc(path)
 
-source _vimrc_common
+source c:\vim\_vimrc_common
 
 " windows-specific
 colorscheme koehler
