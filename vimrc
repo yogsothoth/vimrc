@@ -1,9 +1,9 @@
 " .vimrc file for OSX
 
-set rtp+=~/.vim/bundle\Vundle.vim
+set rtp+=~/.vim/bundle/vundle
 let path="~/.vim/bundle"
 call vundle#rc(path)
 
-source ~/.vimrc
+source ~/.vimrc_common
 
 colorscheme koehler
