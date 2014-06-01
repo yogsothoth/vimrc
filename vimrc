@@ -6,4 +6,4 @@ call vundle#rc(path)
 
 source ~/.vimrc_common
 
-colorscheme koehler
+colorscheme pablo

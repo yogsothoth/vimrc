@@ -46,7 +46,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'majutsushi/tagbar'
-Bundle 'SuperTab'
 
 set number
 set smartindent
@@ -64,9 +63,13 @@ set wildignore=*.swp,*.pyc
 set visualbell
 set noerrorbells
 
+" hightlight trailing whitespace
 autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
 autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
 highlight EOLWS ctermbg=red guibg=red
+
+" highlight column 80
+set colorcolumn=80
 
 " trying with no syntax colouring
 syntax off
