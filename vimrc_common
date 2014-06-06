@@ -37,15 +37,16 @@ set nocompatible
 filetype off
 
 
-Bundle 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
 " Bundles
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-vinegar'
 
 set number
 set smartindent
