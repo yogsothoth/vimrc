@@ -47,6 +47,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-vinegar'
+Plugin 'sjl/badwolf'
+Plugin 'mayansmoke'
 
 set number
 set smartindent
