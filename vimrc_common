@@ -49,6 +49,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-vinegar'
 Plugin 'sjl/badwolf'
 Plugin 'mayansmoke'
+Plugin 'morhetz/gruvbox'
+Plugin 'w0ng/vim-hybrid'
 
 set number
 set smartindent
